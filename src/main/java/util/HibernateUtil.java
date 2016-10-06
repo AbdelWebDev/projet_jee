@@ -2,9 +2,8 @@
 package util;
 
 import org.hibernate.SessionFactory;
-
-
 import org.hibernate.cfg.Configuration;
+import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 public class HibernateUtil {
 
@@ -16,7 +15,9 @@ public class HibernateUtil {
 			
 			// Create the SessionFactory from hibernate.cfg.xml
 
-			sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+			sessionFactory = new Configuration().configure("Hibernate.cfg.xml").buildSessionFactory();
+			//SchemaExport(sessionFactory).create(true,true);
+			
 
 		} catch (Throwable ex) {
 

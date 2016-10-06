@@ -5,6 +5,7 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
+
 import metier.entite.Produit;
 import util.HibernateUtil;
 
@@ -12,7 +13,7 @@ public class CatalogueMetierImpl implements ICatalogueDAO{
 
 	public void addProduit(Produit p) {
 		// TODO Auto-generated method stub
-		org.hibernate.Session session=HibernateUtil.getSessionFactory().getCurrentSession();
+		Session session=HibernateUtil.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
 		try {
 			session.save(p);
