@@ -1,7 +1,8 @@
 package tp_cat_java;
 
 import metier.CatalogueMetierImpl;
-import metier.entite.Produit;
+import metierentite.Produit;
+
 
 public class TestMetier {
 

@@ -2,7 +2,7 @@ package metier;
 
 import java.util.List;
 
-import metier.entite.Produit;
+import metierentite.Produit;
 
 public interface ICatalogueDAO {
 	public void addProduit(Produit p);

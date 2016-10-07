@@ -5,8 +5,10 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
+import metierentite.Produit;
 
-import metier.entite.Produit;
+import org.hibernate.Session;
+
 import util.HibernateUtil;
 
 public class CatalogueMetierImpl implements ICatalogueDAO{
